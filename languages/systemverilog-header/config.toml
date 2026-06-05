@@ -1,0 +1,13 @@
+name = "SystemVerilog Header"
+grammar = "systemverilog"
+path_suffixes = ["svh"]
+brackets = [
+    { start = "{", end = "}", close = true, newline = false },
+    { start = "[", end = "]", close = true, newline = false },
+    { start = "(", end = ")", close = true, newline = false },
+    { start = "\"", end = "\"", close = true, newline = false },
+    { start = "begin", end = "end", close = true, newline = true },
+    { start = "/*", end = " */", close = true, newline = false },
+]
+line_comments = ["// "]
+block_comment = ["/*", "*/"]
